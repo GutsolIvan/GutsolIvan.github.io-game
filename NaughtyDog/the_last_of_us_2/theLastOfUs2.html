@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FORTNITE</title>
+	<link rel="stylesheet" type="text/css" href="theLastOfUs2.css">
+	<link rel="stylesheet" type="text/css" href="../../reset.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section class="theLastOfUs2">
+		<div class="theLastOfUs2-TOP">
+			<a href="../../GAMES.html"><span class="theLastOfUs2-TOP__CLOSE"></span></a>
+		</div>
+		<div class="theLastOfUs2-MAIN">
+			<div class="theLastOfUs2-MAIN__content">
+				<h4>EPIC GAMES</h4>
+				<hr width="10%" align="left">
+				<h2>FORTNITE</h2>
+				<p>Fortnite is an online video game developed by Epic Games and released in 2017. It is available in
+					three distinct game mode versions that otherwise share the same general gameplay and game engine:
+					Fortnite. </p>
+			</div>
+			<div class="theLastOfUs2-MAIN__content-video">
+				<div class="theLastOfUs2-MAIN__content-video-bottom">
+					<div class="theLastOfUs2-MAIN__content-video-bottom-border-top">
+						<div class="theLastOfUs2-MAIN__content-video-bottom-border-top-left"></div>
+						<div class="theLastOfUs2-MAIN__content-video-bottom-border-top-right"></div>
+					</div>
+					<p class="theLastOfUs2-MAIN__content-video-bottom-content">watch now</p>
+					<div class="theLastOfUs2-MAIN__content-video-bottom-border-buttom">
+						<div class="theLastOfUs2-MAIN__content-video-bottom-border-buttom-left"></div>
+						<div class="theLastOfUs2-MAIN__content-video-bottom-border-buttom-right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="theLastOfUs2-BOTTOM"></div>
+	</section>
+	<section class="theLastOfUs2-VIDEO">
+		<div class="theLastOfUs2-VIDEO-TOP">
+			<div class="theLastOfUs2-VIDEO-TOP-CLOSE"></div>
+		</div>
+		<video class="theLastOfUs2-VIDEO-VIDEO" style="outline: none;" muted controls autoplay width="100%"
+			src="THE LAST OF US PART 2 Official Reveal Trailer (4K).mp4"></video>
+		<div class="theLastOfUs2-VIDEO-BOTTOM"></div>
+	</section>
+	<script>
+		const WatchNow = document.querySelector('.theLastOfUs2-MAIN__content-video-bottom-content')
+		WatchNow.onclick = () => {
+			document.querySelector('.theLastOfUs2').style.opacity = '0'
+			document.querySelector('.theLastOfUs2').style.zIndex = '0'
+			document.querySelector('.theLastOfUs2-VIDEO').style.opacity = '1'
+			document.querySelector('.theLastOfUs2-VIDEO').style.zIndex = '1'
+		}
+		const closeVideo = document.querySelector('.theLastOfUs2-VIDEO-TOP-CLOSE')
+		closeVideo.onclick = () => {
+			document.querySelector('video').pause()
+			document.querySelector('.theLastOfUs2').style.opacity = '1'
+			document.querySelector('.theLastOfUs2').style.zIndex = '1'
+			document.querySelector('.theLastOfUs2-VIDEO').style.opacity = '0'
+			document.querySelector('.theLastOfUs2-VIDEO').style.zIndex = '0'
+
+		}
+	</script>
+</body>
+
+</html>

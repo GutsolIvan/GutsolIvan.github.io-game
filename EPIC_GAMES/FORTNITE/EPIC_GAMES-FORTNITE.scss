@@ -1,0 +1,63 @@
+@import '../../mixins.scss';
+::selection{
+	background-color: black;
+}
+body{
+	.FORTNITE{
+		@include game ();
+		.FORTNITE-TOP{
+			@include game-TOP ();
+			.FORTNITE-TOP__CLOSE{
+				@include game-TOP__CLOSE ();
+			}
+		}
+		.FORTNITE-MAIN{
+			@include game-MAIN ('FORTNITE-NEW.jpg');
+			.FORTNITE-MAIN__content{
+				@include game-MAIN__content();
+			}
+			.FORTNITE-MAIN__content-video{
+				@include game-MAIN__content-video ();
+				.FORTNITE-MAIN__content-video-bottom{
+					@include game-MAIN__content-video-bottom ();
+					.FORTNITE-MAIN__content-video-bottom-border-top{
+						@include game-MAIN__content-video-bottom-border-top ();
+						.FORTNITE-MAIN__content-video-bottom-border-top-left{
+							@include game-MAIN__content-video-bottom-border-top-left ();
+						}
+						.FORTNITE-MAIN__content-video-bottom-border-top-right{
+							@include game-MAIN__content-video-bottom-border-top-right ();
+						}
+					}
+					.FORTNITE-MAIN__content-video-bottom-border-buttom{
+						@include game-MAIN__content-video-bottom-border-buttom ();
+						.FORTNITE-MAIN__content-video-bottom-border-buttom-left{
+							@include game-MAIN__content-video-bottom-border-buttom-left ();
+						}
+						.FORTNITE-MAIN__content-video-bottom-border-buttom-right{
+							@include game-MAIN__content-video-bottom-border-buttom-right();
+						}
+					}
+				}
+			}
+		}
+		.FORTNITE-BOTTOM{
+			@include game-BOTTOM ();
+		}
+	}
+	.FORTNITE-VIDEO{
+		@include game-VIDEO ();
+		.FORTNITE-VIDEO-TOP{
+			@include game-VIDEO-TOP ();
+			.FORTNITE-VIDEO-TOP-CLOSE{
+				@include game-VIDEO-TOP-CLOSE ();
+			}
+		}
+		.FORTNITE-VIDEO-VIDEO{
+			@include game-VIDEO-VIDEO ();
+		}
+		.FORTNITE-VIDEO-BOTTOM{
+			@include game-VIDEO-BOTTOM ();
+		}
+	}
+}

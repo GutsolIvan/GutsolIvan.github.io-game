@@ -1,0 +1,63 @@
+@import '../../mixins.scss';
+::selection{
+	background-color: black;
+}
+body{
+	.theLastOfUs2{
+		@include game ();
+		.theLastOfUs2-TOP{
+			@include game-TOP ();
+			.theLastOfUs2-TOP__CLOSE{
+				@include game-TOP__CLOSE ();
+			}
+		}
+		.theLastOfUs2-MAIN{
+			@include game-MAIN ('The-Last-of-Us-Part-II-2-NEW.jpg');
+			.theLastOfUs2-MAIN__content{
+				@include game-MAIN__content();
+			}
+			.theLastOfUs2-MAIN__content-video{
+				@include game-MAIN__content-video ();
+				.theLastOfUs2-MAIN__content-video-bottom{
+					@include game-MAIN__content-video-bottom ();
+					.theLastOfUs2-MAIN__content-video-bottom-border-top{
+						@include game-MAIN__content-video-bottom-border-top ();
+						.theLastOfUs2-MAIN__content-video-bottom-border-top-left{
+							@include game-MAIN__content-video-bottom-border-top-left ();
+						}
+						.theLastOfUs2-MAIN__content-video-bottom-border-top-right{
+							@include game-MAIN__content-video-bottom-border-top-right ();
+						}
+					}
+					.theLastOfUs2-MAIN__content-video-bottom-border-buttom{
+						@include game-MAIN__content-video-bottom-border-buttom ();
+						.theLastOfUs2-MAIN__content-video-bottom-border-buttom-left{
+							@include game-MAIN__content-video-bottom-border-buttom-left ();
+						}
+						.theLastOfUs2-MAIN__content-video-bottom-border-buttom-right{
+							@include game-MAIN__content-video-bottom-border-buttom-right();
+						}
+					}
+				}
+			}
+		}
+		.theLastOfUs2-BOTTOM{
+			@include game-BOTTOM ();
+		}
+	}
+	.theLastOfUs2-VIDEO{
+		@include game-VIDEO ();
+		.theLastOfUs2-VIDEO-TOP{
+			@include game-VIDEO-TOP ();
+			.theLastOfUs2-VIDEO-TOP-CLOSE{
+				@include game-VIDEO-TOP-CLOSE ();
+			}
+		}
+		.theLastOfUs2-VIDEO-VIDEO{
+			@include game-VIDEO-VIDEO ();
+		}
+		.theLastOfUs2-VIDEO-BOTTOM{
+			@include game-VIDEO-BOTTOM ();
+		}
+	}
+}

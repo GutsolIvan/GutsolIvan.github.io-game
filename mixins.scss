@@ -1,0 +1,192 @@
+@mixin game () {
+	position: absolute;
+	z-index: 1;
+	opacity: 1;
+	transition-duration: 1s;
+}
+
+@mixin game-TOP () {
+	width: 100%;
+	height: 13vh;
+	background-color: black;
+	display:flex;
+	justify-content: flex-end;
+	padding:4vh 4vh 4vh 0;
+}
+
+@mixin game-TOP__CLOSE () {
+	position: absolute;
+				right: 32px;
+				top: 32px;
+				width: 32px;
+				height: 32px;
+				opacity: 0.6;
+				transition-duration: 1s;
+				&:hover{
+					opacity: 1;
+					transform: rotate(360deg);
+				}
+				&::before {
+					position: absolute;
+					left: 15px;
+					content: ' ';
+					height: 40px;
+					width: 2px;
+					background-color: rgb(219, 219, 219);
+					transform: rotate(45deg);
+				}
+				&::after {
+					position: absolute;
+					left: 15px;
+					content: ' ';
+					height: 40px;
+					width: 2px;
+					background-color: rgb(219, 219, 219);
+					transform: rotate(-45deg);
+				}
+}
+
+@mixin game-MAIN ($url) {
+	width: 100%;
+	height: 74vh;
+	background-image: url($url);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	display:flex;
+	justify-content: flex-start;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 5px;
+	h2{
+		font-family: 'Major Mono Display', monospace;
+		margin: 4vh 0 4vh 0;
+		letter-spacing: 7px;
+	}
+}
+
+@mixin game-MAIN__content () {
+	width: 33%;
+	padding-top: 17vh;
+	padding-left:7vw;
+}
+
+@mixin game-MAIN__content-video () {
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@mixin game-MAIN__content-video-bottom () {
+	margin: 0 auto;
+	text-align: center;
+	width: 10vw;
+	p{
+		font-size: 17px;
+		margin: 3vh 0 3vh 0;
+		transition-duration: 1s;
+		&:hover{
+		margin: 6vh 0 6vh 0;
+		font-size: 15px;
+		cursor:pointer;
+		}
+	}
+}
+
+@mixin game-MAIN__content-video-bottom-border-top () {
+	display:flex;
+	justify-content: space-between;
+}
+
+@mixin game-MAIN__content-video-bottom-border-top-left () {
+	width: 9px;
+	height: 9px;
+	background-color: white;
+}
+
+@mixin game-MAIN__content-video-bottom-border-top-right () {
+	width: 9px;
+	height: 9px;
+	background-color: white;
+}
+
+@mixin game-MAIN__content-video-bottom-border-buttom () {
+	display:flex;
+	justify-content: space-between;
+}
+
+@mixin game-MAIN__content-video-bottom-border-buttom-left () {
+	width: 9px;
+	height: 9px;
+	background-color: white;
+}
+
+@mixin game-MAIN__content-video-bottom-border-buttom-right () {
+	width: 9px;
+	height: 9px;
+	background-color: white;
+}
+
+@mixin game-BOTTOM () {
+	width: 100%;
+	height: 13vh;
+	background-color: black;
+}
+
+@mixin game-VIDEO () {
+	background-color: black;
+	text-align: center;
+	opacity: 0;
+}
+
+@mixin game-VIDEO-TOP () {
+	background-color: black;
+	width:100%;
+	height: 12vh;
+}
+
+@mixin game-VIDEO-TOP-CLOSE () {
+	background-color: black;
+	position: absolute;
+	right: 32px;
+	top: 32px;
+	width: 32px;
+	height: 32px;
+	opacity: 0.6;
+	transition-duration: 1s;
+	&:hover{
+		opacity: 1;
+		transform: rotate(360deg);
+	}
+	&::before {
+		position: absolute;
+		left: 15px;
+		content: ' ';
+		height: 40px;
+		width: 2px;
+		background-color: rgb(219, 219, 219);
+		transform: rotate(45deg);
+	}
+	&::after {
+		position: absolute;
+		left: 15px;
+		content: ' ';
+		height: 40px;
+		width: 2px;
+		background-color: rgb(219, 219, 219);
+		transform: rotate(-45deg);
+	}
+}
+
+@mixin game-VIDEO-VIDEO () {
+	height: 74vh;
+	width: 80%;
+}
+
+@mixin game-VIDEO-BOTTOM () {
+	background-color: black;
+	width:100%;
+	height: 12vh;
+}
+

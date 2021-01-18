@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FORTNITE</title>
+	<link rel="stylesheet" type="text/css" href="watchDogs.css">
+	<link rel="stylesheet" type="text/css" href="../../reset.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section class="watchDogs">
+		<div class="watchDogs-TOP">
+			<a href="../../GAMES.html"><span class="watchDogs-TOP__CLOSE"></span></a>
+		</div>
+		<div class="watchDogs-MAIN">
+			<div class="watchDogs-MAIN__content">
+				<h4>EPIC GAMES</h4>
+				<hr width="10%" align="left">
+				<h2>FORTNITE</h2>
+				<p>Fortnite is an online video game developed by Epic Games and released in 2017. It is available in
+					three distinct game mode versions that otherwise share the same general gameplay and game engine:
+					Fortnite. </p>
+			</div>
+			<div class="watchDogs-MAIN__content-video">
+				<div class="watchDogs-MAIN__content-video-bottom">
+					<div class="watchDogs-MAIN__content-video-bottom-border-top">
+						<div class="watchDogs-MAIN__content-video-bottom-border-top-left"></div>
+						<div class="watchDogs-MAIN__content-video-bottom-border-top-right"></div>
+					</div>
+					<p class="watchDogs-MAIN__content-video-bottom-content">watch now</p>
+					<div class="watchDogs-MAIN__content-video-bottom-border-buttom">
+						<div class="watchDogs-MAIN__content-video-bottom-border-buttom-left"></div>
+						<div class="watchDogs-MAIN__content-video-bottom-border-buttom-right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="watchDogs-BOTTOM"></div>
+	</section>
+	<section class="watchDogs-VIDEO">
+		<div class="watchDogs-VIDEO-TOP">
+			<div class="watchDogs-VIDEO-TOP-CLOSE"></div>
+		</div>
+		<video class="watchDogs-VIDEO-VIDEO" style="outline: none;" muted controls autoplay width="100%"
+			src="Watch Dogs 3_ Legion — Русский трейлер игры (2020).mp4"></video>
+		<div class="watchDogs-VIDEO-BOTTOM"></div>
+	</section>
+	<script>
+		const WatchNow = document.querySelector('.watchDogs-MAIN__content-video-bottom-content')
+		WatchNow.onclick = () => {
+			document.querySelector('.watchDogs').style.opacity = '0'
+			document.querySelector('.watchDogs').style.zIndex = '0'
+			document.querySelector('.watchDogs-VIDEO').style.opacity = '1'
+			document.querySelector('.watchDogs-VIDEO').style.zIndex = '1'
+		}
+		const closeVideo = document.querySelector('.watchDogs-VIDEO-TOP-CLOSE')
+		closeVideo.onclick = () => {
+			document.querySelector('video').pause()
+			document.querySelector('.watchDogs').style.opacity = '1'
+			document.querySelector('.watchDogs').style.zIndex = '1'
+			document.querySelector('.watchDogs-VIDEO').style.opacity = '0'
+			document.querySelector('.watchDogs-VIDEO').style.zIndex = '0'
+
+		}
+	</script>
+</body>
+
+</html>

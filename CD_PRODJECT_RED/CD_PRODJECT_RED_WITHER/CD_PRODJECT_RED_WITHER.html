@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WITHER_3</title>
+	<link rel="stylesheet" type="text/css" href="../../reset.css">
+	<link rel="stylesheet" type="text/css" href="../../mixins.css">
+	<link rel="stylesheet" type="text/css" href="CD_PRODJECT_RED_WITHER.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section class="CD-PRODJECT-RED">
+		<div class="CD-PRODJECT-RED-TOP">
+			<a href="../../GAMES.html"><span class="CD-PRODJECT-RED-TOP__CLOSE"></span></a>
+		</div>
+		<div class="CD-PRODJECT-RED-MAIN">
+			<div class="CD-PRODJECT-RED-MAIN__content">
+				<h4>CD PRODJECT RED</h4>
+				<hr width="10%" align="left">
+				<h2>WITCHER 3</h2>
+				<p>The Witcher 3: Wild Hunt[b] is a 2015 action role-playing game developed and published by Polish
+					developer CD Projekt Red and is based on The Witcher series of fantasy novels written by Andrzej
+					Sapkowski. </p>
+			</div>
+			<div class="CD-PRODJECT-RED-MAIN__content-video">
+				<div class="CD-PRODJECT-RED-MAIN__content-video-bottom">
+					<div class="CD-PRODJECT-RED-MAIN__content-video-bottom-border-top">
+						<div class="CD-PRODJECT-RED-MAIN__content-video-bottom-border-top-left"></div>
+						<div class="CD-PRODJECT-RED-MAIN__content-video-bottom-border-top-right"></div>
+					</div>
+					<p class="CD-PRODJECT-RED-MAIN__content-video-bottom-content">watch now</p>
+					<div class="CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom">
+						<div class="CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom-left"></div>
+						<div class="CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom-right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="CD-PRODJECT-RED-BOTTOM"></div>
+	</section>
+	<section class="CD-PRODJECT-RED-VIDEO">
+		<div class="CD-PRODJECT-RED-VIDEO-TOP">
+			<div class="CD-PRODJECT-RED-VIDEO-TOP-CLOSE"></div>
+		</div>
+		<video class="CD-PRODJECT-RED-VIDEO-VIDEO" style="outline: none;" muted controls autoplay width="100%"
+			src="Ведьмак 3_ Дикая охота_The Witcher 3_ Wild Hunt. Русский трейлер.mp4"></video>
+		<div class="CD-PRODJECT-RED-VIDEO-BOTTOM"></div>
+	</section>
+	<script>
+		const WatchNow = document.querySelector('.CD-PRODJECT-RED-MAIN__content-video-bottom-content')
+		WatchNow.onclick = () => {
+			document.querySelector('.CD-PRODJECT-RED').style.opacity = '0'
+			document.querySelector('.CD-PRODJECT-RED').style.zIndex = '0'
+			document.querySelector('.CD-PRODJECT-RED-VIDEO').style.opacity = '1'
+			document.querySelector('.CD-PRODJECT-RED-VIDEO').style.zIndex = '1'
+		}
+		const closeVideo = document.querySelector('.CD-PRODJECT-RED-VIDEO-TOP-CLOSE')
+		closeVideo.onclick = () => {
+			document.querySelector('video').pause()
+			document.querySelector('.CD-PRODJECT-RED').style.opacity = '1'
+			document.querySelector('.CD-PRODJECT-RED').style.zIndex = '1'
+			document.querySelector('.CD-PRODJECT-RED-VIDEO').style.opacity = '0'
+			document.querySelector('.CD-PRODJECT-RED-VIDEO').style.zIndex = '0'
+
+		}
+	</script>
+</body>
+
+</html>

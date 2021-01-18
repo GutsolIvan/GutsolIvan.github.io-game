@@ -1,0 +1,177 @@
+::selection {
+  background-color: black;
+}
+
+body .theLastOfUs2 {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  transition-duration: 1s;
+}
+body .theLastOfUs2 .theLastOfUs2-TOP {
+  width: 100%;
+  height: 13vh;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  padding: 4vh 4vh 4vh 0;
+}
+body .theLastOfUs2 .theLastOfUs2-TOP .theLastOfUs2-TOP__CLOSE {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  transition-duration: 1s;
+}
+body .theLastOfUs2 .theLastOfUs2-TOP .theLastOfUs2-TOP__CLOSE:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+body .theLastOfUs2 .theLastOfUs2-TOP .theLastOfUs2-TOP__CLOSE::before {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #dbdbdb;
+  transform: rotate(45deg);
+}
+body .theLastOfUs2 .theLastOfUs2-TOP .theLastOfUs2-TOP__CLOSE::after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #dbdbdb;
+  transform: rotate(-45deg);
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN {
+  width: 100%;
+  height: 74vh;
+  background-image: url("The-Last-of-Us-Part-II-2-NEW.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 5px;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN h2 {
+  font-family: "Major Mono Display", monospace;
+  margin: 4vh 0 4vh 0;
+  letter-spacing: 7px;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content {
+  width: 33%;
+  padding-top: 17vh;
+  padding-left: 7vw;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom {
+  margin: 0 auto;
+  text-align: center;
+  width: 10vw;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom p {
+  font-size: 17px;
+  margin: 3vh 0 3vh 0;
+  transition-duration: 1s;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom p:hover {
+  margin: 6vh 0 6vh 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom .theLastOfUs2-MAIN__content-video-bottom-border-top {
+  display: flex;
+  justify-content: space-between;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom .theLastOfUs2-MAIN__content-video-bottom-border-top .theLastOfUs2-MAIN__content-video-bottom-border-top-left {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom .theLastOfUs2-MAIN__content-video-bottom-border-top .theLastOfUs2-MAIN__content-video-bottom-border-top-right {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom .theLastOfUs2-MAIN__content-video-bottom-border-buttom {
+  display: flex;
+  justify-content: space-between;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom .theLastOfUs2-MAIN__content-video-bottom-border-buttom .theLastOfUs2-MAIN__content-video-bottom-border-buttom-left {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+body .theLastOfUs2 .theLastOfUs2-MAIN .theLastOfUs2-MAIN__content-video .theLastOfUs2-MAIN__content-video-bottom .theLastOfUs2-MAIN__content-video-bottom-border-buttom .theLastOfUs2-MAIN__content-video-bottom-border-buttom-right {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+body .theLastOfUs2 .theLastOfUs2-BOTTOM {
+  width: 100%;
+  height: 13vh;
+  background-color: black;
+}
+body .theLastOfUs2-VIDEO {
+  background-color: black;
+  text-align: center;
+  opacity: 0;
+}
+body .theLastOfUs2-VIDEO .theLastOfUs2-VIDEO-TOP {
+  background-color: black;
+  width: 100%;
+  height: 12vh;
+}
+body .theLastOfUs2-VIDEO .theLastOfUs2-VIDEO-TOP .theLastOfUs2-VIDEO-TOP-CLOSE {
+  background-color: black;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  transition-duration: 1s;
+}
+body .theLastOfUs2-VIDEO .theLastOfUs2-VIDEO-TOP .theLastOfUs2-VIDEO-TOP-CLOSE:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+body .theLastOfUs2-VIDEO .theLastOfUs2-VIDEO-TOP .theLastOfUs2-VIDEO-TOP-CLOSE::before {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #dbdbdb;
+  transform: rotate(45deg);
+}
+body .theLastOfUs2-VIDEO .theLastOfUs2-VIDEO-TOP .theLastOfUs2-VIDEO-TOP-CLOSE::after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #dbdbdb;
+  transform: rotate(-45deg);
+}
+body .theLastOfUs2-VIDEO .theLastOfUs2-VIDEO-VIDEO {
+  height: 74vh;
+  width: 80%;
+}
+body .theLastOfUs2-VIDEO .theLastOfUs2-VIDEO-BOTTOM {
+  background-color: black;
+  width: 100%;
+  height: 12vh;
+}

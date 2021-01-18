@@ -1,0 +1,63 @@
+@import '../../mixins.scss';
+::selection{
+	background-color: black;
+}
+body{
+	.watchDogs{
+		@include game ();
+		.watchDogs-TOP{
+			@include game-TOP ();
+			.watchDogs-TOP__CLOSE{
+				@include game-TOP__CLOSE ();
+			}
+		}
+		.watchDogs-MAIN{
+			@include game-MAIN ('watch__dog-NEW.jpg');
+			.watchDogs-MAIN__content{
+				@include game-MAIN__content();
+			}
+			.watchDogs-MAIN__content-video{
+				@include game-MAIN__content-video ();
+				.watchDogs-MAIN__content-video-bottom{
+					@include game-MAIN__content-video-bottom ();
+					.watchDogs-MAIN__content-video-bottom-border-top{
+						@include game-MAIN__content-video-bottom-border-top ();
+						.watchDogs-MAIN__content-video-bottom-border-top-left{
+							@include game-MAIN__content-video-bottom-border-top-left ();
+						}
+						.watchDogs-MAIN__content-video-bottom-border-top-right{
+							@include game-MAIN__content-video-bottom-border-top-right ();
+						}
+					}
+					.watchDogs-MAIN__content-video-bottom-border-buttom{
+						@include game-MAIN__content-video-bottom-border-buttom ();
+						.watchDogs-MAIN__content-video-bottom-border-buttom-left{
+							@include game-MAIN__content-video-bottom-border-buttom-left ();
+						}
+						.watchDogs-MAIN__content-video-bottom-border-buttom-right{
+							@include game-MAIN__content-video-bottom-border-buttom-right();
+						}
+					}
+				}
+			}
+		}
+		.watchDogs-BOTTOM{
+			@include game-BOTTOM ();
+		}
+	}
+	.watchDogs-VIDEO{
+		@include game-VIDEO ();
+		.watchDogs-VIDEO-TOP{
+			@include game-VIDEO-TOP ();
+			.watchDogs-VIDEO-TOP-CLOSE{
+				@include game-VIDEO-TOP-CLOSE ();
+			}
+		}
+		.watchDogs-VIDEO-VIDEO{
+			@include game-VIDEO-VIDEO ();
+		}
+		.watchDogs-VIDEO-BOTTOM{
+			@include game-VIDEO-BOTTOM ();
+		}
+	}
+}

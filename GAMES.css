@@ -1,0 +1,362 @@
+@charset "UTF-8";
+::selection {
+  background-color: black;
+}
+@media screen and (max-width: 1000px) {
+  ::selection {
+    background-color: red;
+  }
+}
+
+body header {
+  position: absolute;
+  height: 100vh;
+}
+body header h2 {
+  font-family: "Ranchers", cursive;
+  letter-spacing: 10px;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5);
+}
+body header p {
+  letter-spacing: 4px;
+}
+body header .section__one {
+  display: flex;
+}
+body header .section__one .section__one-header {
+  width: 75vw;
+  height: 66vh;
+  background-image: url(img/finalF-NEW.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8vh;
+}
+body header .section__one .section__one-header .marquee {
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 20px;
+  font-size: 80px;
+  white-space: nowrap;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+body header .section__one .section__one-header .marquee span {
+  padding-left: 100%;
+  animation: marquee 40s infinite linear;
+  display: inline-block;
+}
+body header .section__one .section__one-right {
+  width: 25vw;
+  height: 66vh;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject {
+  height: 50%;
+  background-image: url(img/CD_PRODJECT/the-witcher-3-NEW.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  font-family: "Lato", sans-serif;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject .section__one-right-cd_prodject-defolt-delimiter {
+  font-size: 15px;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject .section__one-right-cd_prodject-hover {
+  position: relative;
+  bottom: 12vh;
+  opacity: 0;
+  transition-duration: 80ms;
+  color: black;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject .section__one-right-cd_prodject-hover i {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition-duration: 80ms;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject .section__one-right-cd_prodject-hover i:hover {
+  opacity: 0.7;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject:hover {
+  background-image: url(img/CD_PRODJECT/witherHover-new.jpg);
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject:hover .section__one-right-cd_prodject-hover {
+  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  width: 300px;
+  margin-top: -2vh;
+  padding: 6vh 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject:hover .section__one-right-cd_prodject-hover i {
+  font-size: 40px;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject:hover .section__one-right-cd_prodject-hover p {
+  margin-top: 2vh;
+}
+body header .section__one .section__one-right .section__one-right-cd_prodject:hover .section__one-right-cd_prodject-defolt {
+  opacity: 0;
+}
+body header .section__one .section__one-right .section__one-right-epic-games {
+  position: relative;
+  z-index: 3;
+  height: 50%;
+  background-image: url(img/EPIC_GAMES/FORTNITE-NEW.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  font-family: "Lato", sans-serif;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+body header .section__one .section__one-right .section__one-right-epic-games .section__one-right-epic-games-hover {
+  position: relative;
+  bottom: 12vh;
+  opacity: 0;
+  transition-duration: 80ms;
+  color: black;
+}
+body header .section__one .section__one-right .section__one-right-epic-games .section__one-right-epic-games-hover i {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition-duration: 80ms;
+}
+body header .section__one .section__one-right .section__one-right-epic-games .section__one-right-epic-games-hover i:hover {
+  opacity: 0.7;
+}
+body header .section__one .section__one-right .section__one-right-epic-games:hover {
+  background-image: url(img/EPIC_GAMES/fortnite-hover-new.jpg);
+}
+body header .section__one .section__one-right .section__one-right-epic-games:hover .section__one-right-epic-games-hover {
+  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  width: 300px;
+  margin-top: -2vh;
+  padding: 6vh 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+body header .section__one .section__one-right .section__one-right-epic-games:hover .section__one-right-epic-games-hover i {
+  font-size: 40px;
+}
+body header .section__one .section__one-right .section__one-right-epic-games:hover .section__one-right-epic-games-hover p {
+  margin-top: 2vh;
+}
+body header .section__one .section__one-right .section__one-right-epic-games:hover .section__one-right-epic-games-defolt {
+  opacity: 0;
+}
+body header .section__two {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  top: -33vh;
+}
+body header .section__two .section__two-left {
+  width: 50%;
+  height: 66vh;
+  display: flex;
+}
+body header .section__two .section__two-left .section__two-left-colums {
+  width: 50%;
+  height: 66vh;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog {
+  width: 100%;
+  height: 33vh;
+  background-image: url(img/Naughty_Dog/The-Last-of-Us-Part-II-2-NEW.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  font-family: "Lato", sans-serif;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog .section__two-left-Naughty-Dog-hover {
+  position: relative;
+  bottom: 12vh;
+  opacity: 0;
+  transition-duration: 80ms;
+  color: black;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog .section__two-left-Naughty-Dog-hover i {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition-duration: 80ms;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog .section__two-left-Naughty-Dog-hover i:hover {
+  opacity: 0.7;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog:hover {
+  background-image: url(img/Naughty_Dog/the-last-of-us-2-hover-new.jpg);
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog:hover .section__two-left-Naughty-Dog-hover {
+  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  width: 300px;
+  margin-top: -2vh;
+  padding: 6vh 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog:hover .section__two-left-Naughty-Dog-hover i {
+  font-size: 40px;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog:hover .section__two-left-Naughty-Dog-hover p {
+  margin-top: 2vh;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-Naughty-Dog:hover .section__two-left-Naughty-Dog-defolt {
+  opacity: 0;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-contact {
+  width: 100%;
+  height: 33vh;
+  background-image: url(img/contact.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding-top: 15%;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-contact .section__two-left-contact-social {
+  margin-top: 5vh;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-contact .section__two-left-contact-social i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+}
+body header .section__two .section__two-left .section__two-left-colums .section__two-left-contact .section__two-left-contact-social .fa-instagram {
+  margin-right: 30px;
+}
+body header .section__two .section__two-left .section__two-left-ubisoft {
+  width: 50%;
+  height: 100%;
+  background-image: url(img/ubisoft/watch__dog-NEW.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  font-family: "Lato", sans-serif;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+body header .section__two .section__two-left .section__two-left-ubisoft .section__two-left-ubisoft-hover {
+  position: relative;
+  bottom: 12vh;
+  opacity: 0;
+  transition-duration: 80ms;
+  color: black;
+}
+body header .section__two .section__two-left .section__two-left-ubisoft .section__two-left-ubisoft-hover i {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition-duration: 80ms;
+}
+body header .section__two .section__two-left .section__two-left-ubisoft .section__two-left-ubisoft-hover i:hover {
+  opacity: 0.7;
+}
+body header .section__two .section__two-left .section__two-left-ubisoft:hover {
+  background-image: url(img/ubisoft/watch-dog-hover-new.jpg);
+}
+body header .section__two .section__two-left .section__two-left-ubisoft:hover .section__two-left-ubisoft-hover {
+  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  width: 300px;
+  margin-top: -2vh;
+  padding: 6vh 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+body header .section__two .section__two-left .section__two-left-ubisoft:hover .section__two-left-ubisoft-hover i {
+  font-size: 40px;
+}
+body header .section__two .section__two-left .section__two-left-ubisoft:hover .section__two-left-ubisoft-hover p {
+  margin-top: 2vh;
+}
+body header .section__two .section__two-left .section__two-left-ubisoft:hover .section__two-left-ubisoft-defolt {
+  opacity: 0;
+}
+body header .section__two .section__two-right-codzima {
+  width: 50%;
+  height: 33vh;
+  background-image: url(img/кодзима/dead-streiding-NEW.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  font-family: "Lato", sans-serif;
+  padding-top: 5%;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+body header .section__two .section__two-right-codzima .section__two-right-codzima-hover {
+  position: relative;
+  bottom: 12vh;
+  opacity: 0;
+  transition-duration: 80ms;
+  color: black;
+}
+body header .section__two .section__two-right-codzima .section__two-right-codzima-hover i {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition-duration: 80ms;
+}
+body header .section__two .section__two-right-codzima .section__two-right-codzima-hover i:hover {
+  opacity: 0.7;
+}
+body header .section__two .section__two-right-codzima:hover {
+  background-image: url(img/кодзима/deathstr-hover-new.jpg);
+}
+body header .section__two .section__two-right-codzima:hover .section__two-right-codzima-hover {
+  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  width: 300px;
+  margin-top: -2vh;
+  padding: 6vh 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+body header .section__two .section__two-right-codzima:hover .section__two-right-codzima-hover i {
+  font-size: 40px;
+}
+body header .section__two .section__two-right-codzima:hover .section__two-right-codzima-hover p {
+  margin-top: 2vh;
+}
+body header .section__two .section__two-right-codzima:hover .section__two-right-codzima-defolt {
+  opacity: 0;
+}

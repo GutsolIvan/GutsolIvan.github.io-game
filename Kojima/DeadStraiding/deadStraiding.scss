@@ -1,0 +1,63 @@
+@import '../../mixins.scss';
+::selection{
+	background-color: black;
+}
+body{
+	.deadStraiding{
+		@include game ();
+		.deadStraiding-TOP{
+			@include game-TOP ();
+			.deadStraiding-TOP__CLOSE{
+				@include game-TOP__CLOSE ();
+			}
+		}
+		.deadStraiding-MAIN{
+			@include game-MAIN ('dead-streiding-NEW.jpg');
+			.deadStraiding-MAIN__content{
+				@include game-MAIN__content();
+			}
+			.deadStraiding-MAIN__content-video{
+				@include game-MAIN__content-video ();
+				.deadStraiding-MAIN__content-video-bottom{
+					@include game-MAIN__content-video-bottom ();
+					.deadStraiding-MAIN__content-video-bottom-border-top{
+						@include game-MAIN__content-video-bottom-border-top ();
+						.deadStraiding-MAIN__content-video-bottom-border-top-left{
+							@include game-MAIN__content-video-bottom-border-top-left ();
+						}
+						.deadStraiding-MAIN__content-video-bottom-border-top-right{
+							@include game-MAIN__content-video-bottom-border-top-right ();
+						}
+					}
+					.deadStraiding-MAIN__content-video-bottom-border-buttom{
+						@include game-MAIN__content-video-bottom-border-buttom ();
+						.deadStraiding-MAIN__content-video-bottom-border-buttom-left{
+							@include game-MAIN__content-video-bottom-border-buttom-left ();
+						}
+						.deadStraiding-MAIN__content-video-bottom-border-buttom-right{
+							@include game-MAIN__content-video-bottom-border-buttom-right();
+						}
+					}
+				}
+			}
+		}
+		.deadStraiding-BOTTOM{
+			@include game-BOTTOM ();
+		}
+	}
+	.deadStraiding-VIDEO{
+		@include game-VIDEO ();
+		.deadStraiding-VIDEO-TOP{
+			@include game-VIDEO-TOP ();
+			.deadStraiding-VIDEO-TOP-CLOSE{
+				@include game-VIDEO-TOP-CLOSE ();
+			}
+		}
+		.deadStraiding-VIDEO-VIDEO{
+			@include game-VIDEO-VIDEO ();
+		}
+		.deadStraiding-VIDEO-BOTTOM{
+			@include game-VIDEO-BOTTOM ();
+		}
+	}
+}

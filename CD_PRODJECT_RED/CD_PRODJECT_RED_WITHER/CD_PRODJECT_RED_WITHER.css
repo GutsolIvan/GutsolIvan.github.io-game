@@ -1,0 +1,177 @@
+::selection {
+  background-color: black;
+}
+
+body .CD-PRODJECT-RED {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  transition-duration: 1s;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-TOP {
+  width: 100%;
+  height: 13vh;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  padding: 4vh 4vh 4vh 0;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-TOP .CD-PRODJECT-RED-TOP__CLOSE {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  transition-duration: 1s;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-TOP .CD-PRODJECT-RED-TOP__CLOSE:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-TOP .CD-PRODJECT-RED-TOP__CLOSE::before {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #dbdbdb;
+  transform: rotate(45deg);
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-TOP .CD-PRODJECT-RED-TOP__CLOSE::after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #dbdbdb;
+  transform: rotate(-45deg);
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN {
+  width: 100%;
+  height: 74vh;
+  background-image: url("the-witcher-3-NEW.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 5px;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN h2 {
+  font-family: "Major Mono Display", monospace;
+  margin: 4vh 0 4vh 0;
+  letter-spacing: 7px;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content {
+  width: 33%;
+  padding-top: 17vh;
+  padding-left: 7vw;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom {
+  margin: 0 auto;
+  text-align: center;
+  width: 10vw;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom p {
+  font-size: 17px;
+  margin: 3vh 0 3vh 0;
+  transition-duration: 1s;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom p:hover {
+  margin: 6vh 0 6vh 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom .CD-PRODJECT-RED-MAIN__content-video-bottom-border-top {
+  display: flex;
+  justify-content: space-between;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom .CD-PRODJECT-RED-MAIN__content-video-bottom-border-top .CD-PRODJECT-RED-MAIN__content-video-bottom-border-top-left {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom .CD-PRODJECT-RED-MAIN__content-video-bottom-border-top .CD-PRODJECT-RED-MAIN__content-video-bottom-border-top-right {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom .CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom {
+  display: flex;
+  justify-content: space-between;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom .CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom .CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom-left {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-MAIN .CD-PRODJECT-RED-MAIN__content-video .CD-PRODJECT-RED-MAIN__content-video-bottom .CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom .CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom-right {
+  width: 9px;
+  height: 9px;
+  background-color: white;
+}
+body .CD-PRODJECT-RED .CD-PRODJECT-RED-BOTTOM {
+  width: 100%;
+  height: 13vh;
+  background-color: black;
+}
+body .CD-PRODJECT-RED-VIDEO {
+  background-color: black;
+  text-align: center;
+  opacity: 0;
+}
+body .CD-PRODJECT-RED-VIDEO .CD-PRODJECT-RED-VIDEO-TOP {
+  background-color: black;
+  width: 100%;
+  height: 12vh;
+}
+body .CD-PRODJECT-RED-VIDEO .CD-PRODJECT-RED-VIDEO-TOP .CD-PRODJECT-RED-VIDEO-TOP-CLOSE {
+  background-color: black;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  transition-duration: 1s;
+}
+body .CD-PRODJECT-RED-VIDEO .CD-PRODJECT-RED-VIDEO-TOP .CD-PRODJECT-RED-VIDEO-TOP-CLOSE:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+body .CD-PRODJECT-RED-VIDEO .CD-PRODJECT-RED-VIDEO-TOP .CD-PRODJECT-RED-VIDEO-TOP-CLOSE::before {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #dbdbdb;
+  transform: rotate(45deg);
+}
+body .CD-PRODJECT-RED-VIDEO .CD-PRODJECT-RED-VIDEO-TOP .CD-PRODJECT-RED-VIDEO-TOP-CLOSE::after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #dbdbdb;
+  transform: rotate(-45deg);
+}
+body .CD-PRODJECT-RED-VIDEO .CD-PRODJECT-RED-VIDEO-VIDEO {
+  height: 74vh;
+  width: 80%;
+}
+body .CD-PRODJECT-RED-VIDEO .CD-PRODJECT-RED-VIDEO-BOTTOM {
+  background-color: black;
+  width: 100%;
+  height: 12vh;
+}

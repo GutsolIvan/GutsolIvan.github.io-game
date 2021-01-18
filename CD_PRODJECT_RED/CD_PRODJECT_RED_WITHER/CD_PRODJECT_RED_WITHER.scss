@@ -1,0 +1,63 @@
+@import '../../mixins.scss';
+::selection{
+	background-color: black;
+}
+body{
+	.CD-PRODJECT-RED{
+		@include game ();
+		.CD-PRODJECT-RED-TOP{
+			@include game-TOP ();
+			.CD-PRODJECT-RED-TOP__CLOSE{
+				@include game-TOP__CLOSE ();
+			}
+		}
+		.CD-PRODJECT-RED-MAIN{
+			@include game-MAIN ('the-witcher-3-NEW.jpg');
+			.CD-PRODJECT-RED-MAIN__content{
+				@include game-MAIN__content();
+			}
+			.CD-PRODJECT-RED-MAIN__content-video{
+				@include game-MAIN__content-video ();
+				.CD-PRODJECT-RED-MAIN__content-video-bottom{
+					@include game-MAIN__content-video-bottom ();
+					.CD-PRODJECT-RED-MAIN__content-video-bottom-border-top{
+						@include game-MAIN__content-video-bottom-border-top ();
+						.CD-PRODJECT-RED-MAIN__content-video-bottom-border-top-left{
+							@include game-MAIN__content-video-bottom-border-top-left ();
+						}
+						.CD-PRODJECT-RED-MAIN__content-video-bottom-border-top-right{
+							@include game-MAIN__content-video-bottom-border-top-right ();
+						}
+					}
+					.CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom{
+						@include game-MAIN__content-video-bottom-border-buttom ();
+						.CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom-left{
+							@include game-MAIN__content-video-bottom-border-buttom-left ();
+						}
+						.CD-PRODJECT-RED-MAIN__content-video-bottom-border-buttom-right{
+							@include game-MAIN__content-video-bottom-border-buttom-right();
+						}
+					}
+				}
+			}
+		}
+		.CD-PRODJECT-RED-BOTTOM{
+			@include game-BOTTOM ();
+		}
+	}
+	.CD-PRODJECT-RED-VIDEO{
+		@include game-VIDEO ();
+		.CD-PRODJECT-RED-VIDEO-TOP{
+			@include game-VIDEO-TOP ();
+			.CD-PRODJECT-RED-VIDEO-TOP-CLOSE{
+				@include game-VIDEO-TOP-CLOSE ();
+			}
+		}
+		.CD-PRODJECT-RED-VIDEO-VIDEO{
+			@include game-VIDEO-VIDEO ();
+		}
+		.CD-PRODJECT-RED-VIDEO-BOTTOM{
+			@include game-VIDEO-BOTTOM ();
+		}
+	}
+}
